@@ -17,7 +17,6 @@ DEFAULT_EXCLUDES = [
 @dataclass
 class RuntimeEnvConf:
     conda: Any | None = None
-    oxeconda: Any | None = None
     py_modules: list[str] | None = None
     env_vars: dict[str, str] = field(default_factory=lambda: DEFAULT_ENV_VARS.copy())
     working_dir: str = '.'
